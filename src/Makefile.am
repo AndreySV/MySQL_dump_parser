@@ -1,0 +1,2 @@
+bin_PROGRAMS=mysql_dump_parser
+mysql_dump_parser_SOURCES=compile_date_time.h main.c 

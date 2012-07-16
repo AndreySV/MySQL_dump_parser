@@ -1,0 +1,17 @@
+  MySQL dump parser can be used to exclude from MySQL dump certain tables or include in dump only certain tables.
+  It supports regexp in parameters.
+
+
+  Using:
+
+    mysql_dump_parser [ -i include_tables] [-x exclude_tables] 
+
+    Parameters include_tables and exclude_tables can be a regular expressions.
+    Dump file is read from stdin and then filtred dump file will be written to the stdout.
+    Dump file should have the same charset as the current locale.
+  
+  Example:
+
+    cat init_dump | mysql_dump_parser -i pma* -x pma_bookmarks > new_dump
+  
+
