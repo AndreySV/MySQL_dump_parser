@@ -3707,7 +3707,7 @@ $as_echo "$as_me: WARNING: echo \"Make check\" will not be available. wc and dif
 
 fi
 
- if test  x$wc_exist =  xtrue -a  x$diff_exist = xtrue   ; then
+ if test  x$wc_exist =  xtrue -a  x$diff_exist = xtrue    ; then
   CHECK_ENABLED_TRUE=
   CHECK_ENABLED_FALSE='#'
 else
@@ -4259,8 +4259,7 @@ done
 # Output files
 ac_config_files="$ac_config_files Makefile src/Makefile"
 
-ac_config_files="$ac_config_files tests/Makefile"
-
+# AC_CONFIG_FILES([tests/Makefile ])
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -4987,7 +4986,6 @@ do
     "depfiles") CONFIG_COMMANDS="$CONFIG_COMMANDS depfiles" ;;
     "Makefile") CONFIG_FILES="$CONFIG_FILES Makefile" ;;
     "src/Makefile") CONFIG_FILES="$CONFIG_FILES src/Makefile" ;;
-    "tests/Makefile") CONFIG_FILES="$CONFIG_FILES tests/Makefile" ;;
 
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5 ;;
   esac

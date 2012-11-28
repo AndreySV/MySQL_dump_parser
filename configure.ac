@@ -21,7 +21,7 @@ AS_IF([test  x$wc_exist !=  xtrue -o  x$diff_exist != xtrue ], [
     AC_MSG_WARN([echo "Make check" will not be available. wc and diff are necessary for that. ])
 ])
 
-AM_CONDITIONAL( CHECK_ENABLED, [test  x$wc_exist =  xtrue -a  x$diff_exist = xtrue  ] )
+AM_CONDITIONAL( CHECK_ENABLED, [test  x$wc_exist =  xtrue -a  x$diff_exist = xtrue   ] )
 
 
 
@@ -48,6 +48,6 @@ AC_PROG_INSTALL
 
 # Output files
 AC_CONFIG_FILES([Makefile src/Makefile ])
-AC_CONFIG_FILES([tests/Makefile ])
+# AC_CONFIG_FILES([tests/Makefile ])
 
 AC_OUTPUT()
